@@ -1,9 +1,16 @@
-{% extends 'error_handler_base.html' %}
-{% load i18n %}
-{% block content %}
-<div class="text-center mt-5">
+<!-- 404.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Your CSS file -->
+</head>
+<body>
     <h1>404</h1>
-    <p>{% trans 'Looks like the page you're looking for is does not exist.' %}</p>
-    <a href="/" class="link">&LeftArrow; {% trans 'Return to the app' %}</a>
-</div>
-{% endblock %}
+    <p>Looks like the page you're looking for does not exist.</p>
+    <a href="index.html">← Return to the app</a>
+    <script src="js/script.js"></script> <!-- Your JS file -->
+</body>
+</html>
